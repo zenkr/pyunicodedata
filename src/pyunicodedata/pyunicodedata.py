@@ -24,8 +24,10 @@ class PyUnicodeData():
     def __init__(self, version='14.0.0'):
         self.version = version
         self.ucd_dir = self.pyunicodedata_dir / version / 'ucd'
+        self.ucd_xml_dir = self.pyunicodedata_dir / version / 'ucdxml'
         self.ucd_zip_path = self.ucd_dir / 'UCD.zip'
         self.unihan_zip_path = self.ucd_dir / 'Unihan.zip'
+        self.ucd_xml_path = self.ucd_xml_dir / 'ucd.all.grouped.xml'
 
     def unzip(self):
         self._unzip_ucd_zip()

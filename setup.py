@@ -16,7 +16,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="pyunicodedata",
-    version="0.0.4",
+    version="0.0.6",
     author="ZENKR",
     author_email="zenkr@qq.com",
     description="A package including Unicode UCD.zip and Unihan.zip",
@@ -34,6 +34,10 @@ setuptools.setup(
     package_data={
         "pyunicodedata": [
             "14.0.0/ucd/*",
+            "14.0.0/ucd/auxiliary/*",
+            "14.0.0/ucd/emoji/*",
+            "14.0.0/ucd/extracted/*",
+            "14.0.0/ucdxml/*",
             # "14.0.0/ucd/UCD.zip",
             # "14.0.0/ucd/Unihan.zip",
         ],
